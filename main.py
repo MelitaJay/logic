@@ -23,11 +23,14 @@ prop_8 = PropositionConnected(prop_6, prop_7, connective_or)
 prop_9 = PropositionAtomic("a", 1)
 prop_10 = PropositionConnected(prop_9, prop_8, connective_or)
 
+prop_11 = PropositionAtomic("p", 1)
+prop_12 = PropositionConnected(prop_10, prop_11, connective_or)
 
 # FormationSequence(prop_3).get()
 # FormationSequence(prop_5).get()
 # FormationSequence(prop_8).get()
-FormationSequence(prop_10).get()
+# FormationSequence(prop_10).get()
+FormationSequence(prop_12).get()
 
 
 # NumberOfBrackets(prop_10).count()
